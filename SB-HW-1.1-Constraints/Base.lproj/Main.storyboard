@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,31 +13,29 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SB_HW_1_1_Constraints" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ntK-lZ-Rzu">
-                                <rect key="frame" x="10" y="54" width="370" height="746"/>
+                                <rect key="frame" x="54" y="10" width="788" height="373"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" placeholderIntrinsicWidth="1000" placeholderIntrinsicHeight="100" text="green" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6z-Xe-pS5">
-                                        <rect key="frame" x="0.0" y="0.0" width="370" height="368"/>
-                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                        <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                        <size key="shadowOffset" width="0.0" height="0.0"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" placeholderIntrinsicWidth="1000" placeholderIntrinsicHeight="100" text="red" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KRR-vs-nhF">
-                                        <rect key="frame" x="0.0" y="378" width="370" height="368"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rM1-Dv-PJb">
+                                        <rect key="frame" x="0.0" y="0.0" width="788" height="181.5"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
                                         <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                        <size key="shadowOffset" width="0.0" height="0.0"/>
-                                    </label>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TxO-kY-ave">
+                                        <rect key="frame" x="0.0" y="191.5" width="788" height="181.5"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                                    </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="TxO-kY-ave" firstAttribute="leading" secondItem="ntK-lZ-Rzu" secondAttribute="leading" id="DuJ-1y-dl3"/>
+                                    <constraint firstAttribute="trailing" secondItem="rM1-Dv-PJb" secondAttribute="trailing" id="MXK-06-7Vk"/>
+                                    <constraint firstItem="rM1-Dv-PJb" firstAttribute="leading" secondItem="ntK-lZ-Rzu" secondAttribute="leading" id="WuT-Sp-0VK"/>
+                                    <constraint firstAttribute="trailing" secondItem="TxO-kY-ave" secondAttribute="trailing" id="e03-WE-ZOW"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
